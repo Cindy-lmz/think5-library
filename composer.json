@@ -20,7 +20,7 @@
       "src/common.php"
     ],
     "psr-4": {
-      "library\\": "src"
+      "think\\admin\\": "src"
     }
   }
 }

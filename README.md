@@ -1,44 +1,3 @@
-[![Latest Stable Version](https://poser.pugx.org/zoujingli/think-library/v/stable)](https://packagist.org/packages/zoujingli/think-library) [![Total Downloads](https://poser.pugx.org/zoujingli/think-library/downloads)](https://packagist.org/packages/zoujingli/think-library) [![Latest Unstable Version](https://poser.pugx.org/zoujingli/think-library/v/unstable)](https://packagist.org/packages/zoujingli/think-library) [![License](https://poser.pugx.org/zoujingli/think-library/license)](https://packagist.org/packages/zoujingli/think-library)
-
-# ThinkLibrary for ThinkPHP5.1
-ThinkLibrary 是针对 ThinkPHP5.1 版本封装的一套工具类库，方便快速构建 WEB 应用。
-
-## 包含组件
-* 数据列表展示（可带高级搜索器）
-* FORM表单处理器（表单展示及数据入库）
-* 数据状态快速处理（数据指定字段更新，支持多字段同时）
-* 数据安全删除处理（硬删除 + 软删除，is_deleted 字段存在则自动软删除）
-* 文件存储通用组件（本地服务存储 + 阿里云OSS存储 + 七牛云存储）
-* 通用数据保存更新（通过 key 值及 where 判定是否存在，存在则更新，不存在则新增）
-* 通用网络请求 （支持 get 及 post，可配置请求证书等）
-* Emoji 表情转义处理（部分数据库不支持保存 Emoji 表情，可用这个方法哦）
-* 系统参数通用 k-v 配置（快速参数长久化配置）
-* UTF8加密算法支持（安全URL参数传参数）
-* 接口 CORS 跨域默认支持（输出 JSON 标准化）
-* 支持表单CSRF安全验证（自动化 FORM 标签替换）
-* 更新功能等待您来发现哦....
-
-## 参考项目
-
-#### framework - V1.0 / V2.0
-* Gitee 仓库 https://gitee.com/zoujingli/framework
-* Github 仓库 https://github.com/zoujingli/framework
-* 体验地址（账号密码都是admin）https://framework.thinkadmin.top
-
-#### ThinkAdmin - V4.0 / V4.1
-* Gitee 仓库 https://gitee.com/zoujingli/ThinkAdmin
-* Github 仓库 https://github.com/zoujingli/ThinkAdmin
-* 体验地址（账号密码都是admin）https://demo.thinkadmin.top
-
-## 代码仓库
- ThinkLibrary 为 MIT 协议开源项目，安装使用或二次开发不受约束，欢迎 fork 项目。
- 
- 部分代码来自互联网，若有异议可以联系作者进行删除。
- 
- * 在线体验地址：https://demo.thinkadmin.top （账号和密码都是 admin ）
- * Gitee仓库地址：https://gitee.com/zoujingli/ThinkLibrary
- * GitHub仓库地址：https://github.com/zoujingli/ThinkLibrary
-
 ## 使用说明
 * ThinkLibrary 需要 Composer 支持
 * 安装命令 ` composer require zoujingli/think-library 5.1.x-dev`
@@ -210,7 +169,3 @@ $string = encode($content);
 // 加密字符串解密
 $content = decode($string);
 ```
-
-## 赞助打赏
-
-![赞助](http://static.thinkadmin.top/pay.png)
