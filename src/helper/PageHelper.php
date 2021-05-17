@@ -79,8 +79,8 @@ class PageHelper extends Helper
                 array_push($rows, "<option data-url='{$url}' " . ($rows === $num ? 'selected' : '') . " value='{$num}' {$selected}>{$num}</option>");
             }
             $selects = "<select data-auto-none>" . join('', $rows) . "</select>";
-            $pagetext = lang('think_library_page_html', [$page->total(), $selects, $page->lastPage(), $page->currentPage()]);
-            $pagehtml = "<div class='pagination-container nowrap'><span>{$pagetext}</span>{$page->render()}</div>";
+            $pagetext = "<div class='pagination-container nowrap'><span>共 {$page->total()} 条记录，每页显示 {$selects} 条，共 {$page->lastPage()} 页当前显示第 {$page->currentPage()} 页。</span>{$page->render()}</div>";
+            $pagehtml = "<div class='pagination-container nowrap'><span>{$pagetext}</span></div>";
             $this->controller->assign('pagehtml', preg_replace('|href="(.*?)"|', 'data-open="$1" onclick="return false" href="$1"', $pagehtml));
             $result = ['page' => ['limit' => intval($limit), 'total' => intval($page->total()), 'pages' => intval($page->lastPage()), 'current' => intval($page->currentPage())], 'list' => $page->items()];
         } else {

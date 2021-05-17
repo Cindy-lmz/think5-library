@@ -105,6 +105,40 @@ abstract class Controller extends \stdClass
         }
     }
 
+     /**
+     * 对外接口返回
+     * @Author Cindy
+     * @E-main cindyli@topichina.com.cn
+     * @param  [type]                   $info [description]
+     * @param  string                   $data [description]
+     * @param  integer                  $code [description]
+     * @return [type]                         [description]
+     */
+    public function apisuccess($info, $data = '{-null-}', $code = 1)
+    {
+        if ($this->csrf_state) {
+            TokenHelper::instance()->clear();
+        }
+        throw new HttpResponseException(json([
+            'errorCode' => $code, 'errorMessage' => $info, 'data' => $data,
+        ]));
+    }
+    
+    /**
+     * 对接接口返回
+     * @Author Cindy
+     * @E-main cindyli@topichina.com.cn
+     * @param  [type]                   $info [description]
+     * @param  string                   $data [description]
+     * @param  integer                  $code [description]
+     * @return [type]                         [description]
+     */
+    public function apierror($info, $data = '{-null-}', $code = 0)
+    {
+        throw new HttpResponseException(json([
+            'errorCode' => $code, 'errorMessage' => $info, 'data' => $data,
+        ]));
+    }
     /**
      * 返回失败的操作
      * @param mixed $info 消息内容

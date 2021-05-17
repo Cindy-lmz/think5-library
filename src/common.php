@@ -237,26 +237,6 @@ if (PHP_SAPI !== 'cli') {
     });
 }
 
-// 注册系统常用指令
-if (class_exists('think\Console')) {
-    Console::addDefaultCommands([
-        // 注册清理无效会话
-        'library\command\Sess',
-        // 注册系统任务指令
-        'library\queue\WorkQueue',
-        'library\queue\StopQueue',
-        'library\queue\StateQueue',
-        'library\queue\StartQueue',
-        'library\queue\QueryQueue',
-        'library\queue\ListenQueue',
-        // 注册系统更新指令
-        'library\command\sync\Admin',
-        'library\command\sync\Plugs',
-        'library\command\sync\Config',
-        'library\command\sync\Wechat',
-        'library\command\sync\Service',
-    ]);
-}
 
 // 动态加载模块配置
 if (function_exists('think\__include_file')) {
