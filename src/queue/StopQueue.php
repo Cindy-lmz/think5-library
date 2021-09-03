@@ -1,7 +1,4 @@
 <?php
-
-
-
 namespace library\queue;
 
 use library\service\ProcessService;

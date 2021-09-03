@@ -1,9 +1,4 @@
 <?php
-
-
-
-namespace think\admin\service;
-
 namespace library\service;
 
 use library\Service;

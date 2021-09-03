@@ -1,7 +1,4 @@
 <?php
-
-
-
 namespace library;
 
 use think\App;

@@ -1,6 +1,4 @@
 <?php
-
-
 namespace library\command\sync;
 
 use library\command\Sync;

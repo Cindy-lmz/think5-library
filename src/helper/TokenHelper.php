@@ -1,6 +1,4 @@
 <?php
-
-
 namespace library\helper;
 
 use library\Helper;

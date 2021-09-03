@@ -1,6 +1,4 @@
 <?php
-
-
 namespace library\service;
 
 use library\Service;

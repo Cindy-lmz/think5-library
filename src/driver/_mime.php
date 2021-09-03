@@ -1,6 +1,4 @@
 <?php
-
-
 return [
     'ez'          => 'application/andrew-inset',
     'aw'          => 'application/applixware',

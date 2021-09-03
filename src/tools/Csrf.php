@@ -1,6 +1,4 @@
 <?php
-
-
 namespace library\tools;
 
 use think\exception\HttpResponseException;

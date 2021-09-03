@@ -1,6 +1,4 @@
 <?php
-
-
 use library\service\TokenService;
 use library\tools\Crypt;
 use library\tools\Data;

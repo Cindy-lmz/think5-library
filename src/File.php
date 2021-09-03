@@ -1,6 +1,4 @@
 <?php
-
-
 namespace library;
 
 use library\driver\Local;
